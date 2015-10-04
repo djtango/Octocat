@@ -1,1 +1,5 @@
-Explain what the "upstream" remote is usually used for:
+upstream - a refers in Git to the flow of changes. Colloquially it refers to the "original" but as Git is distributed, this is a relative term. Changes from upstream flow downstream and in the context of numerous individuals working from one repo, the concept of "original" holds. 
+
+The upstream remote is therefore used as the control for the flow of changes - any changes should be made upstream so that they can flow downstream to other remotes on the repo
+
+When cloning a repo, by default the cloned repo is downstream of the remote, so when performing a git push it is necessary to (at first) explicitly state that the work should be pushed upstream via "-u"
