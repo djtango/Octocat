@@ -1,1 +1,10 @@
-Explain what a branch is:
+Branches enable you to isolate any major changes made to an existing project. From a project point of view, this enables any experimental changes to be kept separate from a stable product. Meanwhile, if any minor changes need to be made to the original stable product, these can be made separately from the experimental branch if need be. Commit history for these changes are kept as well so version control is clear and rollback is easy.
+
+Multiple branches can be created from any point in a project and from a development point of view, this enables any major subprojects to be developed siloed from an existing main project, complete with their isolated commit records, before subsequently being merged back into the main product when complete and stable if desired. 
+
+perform branch by:
+
+git branch <branchname>
+git checkout <branchname>
+
+or git checkout -b <branchname>
