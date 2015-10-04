@@ -1,1 +1,16 @@
-Explain what git clone does:
+git clone "url/repo" is a command which performs the equivalent of the following:
+
+	mkdir repo
+	cd repoo
+	git init
+	git remote add origin url/repo
+	git pull
+	cd ..
+
+The end result of this is that it quickly enables a user to save down a repo from an external source. This not only creates an equivalent repo + files locally on the user's device, but also saves down all history of commits and history. The command also syncs the user to the repo for immediate ability to contribute to the cloned git. 
+
+Remember to specify settings of push when subsequently pushing back to the git (i.e. git push -u origin master) otherwise the following message will be displayed:
+
+	"On branch source
+	 Your branch is based on 'origin/master', but the upstream is gone.
+	   (use "git branch --unset-upstream" to fixup)"
